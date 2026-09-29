@@ -1,0 +1,402 @@
+/* =========================================================
+   Bass & Lights - main stylesheet
+   Shared by all 4 pages: index, festivals, artists, guide
+   ========================================================= */
+
+/* ---------- Base / reset ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0b0a14;
+    color: #e8e6f0;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: #2de2e6;
+}
+
+a:hover {
+    color: #ff3ea5;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Arial Black", Arial, sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+h2 {
+    color: #ff3ea5;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #2de2e6;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 14px;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+/* ---------- Header + navigation (same on every page) ---------- */
+header {
+    background-color: #161427;
+    border-bottom: 3px solid #ff3ea5;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-inner {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 16px 24px;
+}
+
+.logo {
+    color: #ffffff;
+    font-family: "Arial Black", Arial, sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #ff3ea5;
+}
+
+nav ul {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+}
+
+nav a {
+    border-radius: 20px;
+    color: #e8e6f0;
+    display: block;
+    font-weight: bold;
+    padding: 8px 18px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #2a2645;
+    color: #2de2e6;
+}
+
+/* class added to the link of the page you are currently on */
+nav a.active {
+    background-color: #ff3ea5;
+    color: #0b0a14;
+}
+
+/* ---------- Page layout ---------- */
+main {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 40px 24px 60px;
+}
+
+section {
+    margin-bottom: 56px;
+}
+
+.page-title {
+    border-left: 6px solid #2de2e6;
+    margin-bottom: 36px;
+    padding-left: 18px;
+}
+
+.page-title h1 {
+    color: #ffffff;
+    font-size: 42px;
+}
+
+.page-title p {
+    color: #a9a4c4;
+    font-size: 18px;
+}
+
+/* ---------- Home page hero ---------- */
+.hero {
+    align-items: center;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 56px;
+}
+
+.hero h1 {
+    color: #ffffff;
+    font-size: 54px;
+    margin-bottom: 16px;
+}
+
+.hero h1 .glow {
+    color: #ff3ea5;
+    text-shadow: 0 0 18px rgba(255, 62, 165, 0.7);
+}
+
+.hero p {
+    color: #c9c5de;
+    font-size: 18px;
+}
+
+.hero img {
+    border: 3px solid #2a2645;
+    border-radius: 16px;
+}
+
+.button {
+    background-color: #ff3ea5;
+    border-radius: 30px;
+    color: #0b0a14;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 12px 28px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #2de2e6;
+    color: #0b0a14;
+}
+
+/* ---------- Cards (used on home + guide) ---------- */
+.card-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    background-color: #161427;
+    border: 1px solid #2a2645;
+    border-radius: 14px;
+    padding: 24px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+    border-color: #ff3ea5;
+    transform: translateY(-4px);
+}
+
+.card a {
+    font-weight: bold;
+}
+
+/* ---------- Festivals page ---------- */
+.festival {
+    background-color: #161427;
+    border-radius: 14px;
+    display: grid;
+    gap: 28px;
+    grid-template-columns: 360px 1fr;
+    margin-bottom: 32px;
+    overflow: hidden;
+}
+
+.festival img {
+    height: 100%;
+    min-height: 260px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.festival-info {
+    padding: 24px 24px 24px 0;
+}
+
+.festival-info h2 {
+    margin-bottom: 6px;
+}
+
+.festival-meta {
+    color: #a9a4c4;
+    font-size: 15px;
+    margin-bottom: 14px;
+}
+
+.festival-meta strong {
+    color: #e8e6f0;
+}
+
+/* table comparing all the festivals */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+caption {
+    color: #a9a4c4;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+th,
+td {
+    border-bottom: 1px solid #2a2645;
+    padding: 12px 14px;
+    text-align: left;
+}
+
+th {
+    background-color: #2a2645;
+    color: #2de2e6;
+}
+
+tbody tr:hover {
+    background-color: #161427;
+}
+
+/* ---------- Artists / genres page ---------- */
+.genre-list {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.genre {
+    background-color: #161427;
+    border-left: 5px solid #8b5cf6;
+    border-radius: 10px;
+    padding: 22px;
+}
+
+.genre .bpm {
+    color: #a9a4c4;
+    font-size: 14px;
+}
+
+.hype {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+/* styling for the <meter> element (MDN pick - see artists.html) */
+meter {
+    height: 18px;
+    width: 200px;
+}
+
+.countdown {
+    background-color: #161427;
+    border-radius: 14px;
+    padding: 28px 28px 28px 60px;
+}
+
+.countdown li {
+    border-bottom: 1px dashed #2a2645;
+    padding: 12px 0;
+}
+
+.countdown li:last-child {
+    border-bottom: none;
+}
+
+.countdown li::marker {
+    color: #ff3ea5;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ---------- Guide page ---------- */
+.checklist {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.checklist ul {
+    list-style: none;
+}
+
+.checklist li {
+    padding: 6px 0;
+}
+
+.checklist li::before {
+    color: #2de2e6;
+    content: "\2713  ";
+}
+
+/* the "Leave at home" list gets an X instead of a check mark */
+.checklist .no li::before {
+    color: #ff3ea5;
+    content: "\2717  ";
+}
+
+.callout {
+    align-items: center;
+    background-color: #1d1936;
+    border: 2px solid #8b5cf6;
+    border-radius: 14px;
+    display: grid;
+    gap: 28px;
+    grid-template-columns: 320px 1fr;
+    padding: 24px;
+}
+
+.callout img {
+    border-radius: 10px;
+}
+
+/* styling for <details> / <summary> (MDN pick - see guide.html) */
+details {
+    background-color: #161427;
+    border: 1px solid #2a2645;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 16px 20px;
+}
+
+details[open] {
+    border-color: #2de2e6;
+}
+
+summary {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+details p {
+    margin: 12px 0 0;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: #161427;
+    border-top: 3px solid #2de2e6;
+    color: #a9a4c4;
+    padding: 24px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
