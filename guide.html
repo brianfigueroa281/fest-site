@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A festival survival guide: packing list, hearing protection, and first-timer FAQ.">
+    <title>Bass &amp; Lights | Survival Guide</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ===== Header / navigation ===== -->
+    <header>
+        <div class="header-inner">
+            <a class="logo" href="index.html">BASS <span>&amp;</span> LIGHTS</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="festivals.html">Festivals</a></li>
+                    <li><a href="artists.html">Artists &amp; Genres</a></li>
+                    <li><a class="active" href="guide.html">Survival Guide</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="page-title">
+            <h1>Festival Survival Guide</h1>
+            <p>Everything I wish someone told me before my first festival.</p>
+        </div>
+
+        <!-- ===== Packing checklist ===== -->
+        <section>
+            <h2>What to pack</h2>
+            <div class="checklist">
+                <div class="card">
+                    <h3>Must haves</h3>
+                    <ul>
+                        <li>Ticket / wristband (registered!)</li>
+                        <li>ID and a card</li>
+                        <li>Phone + portable charger</li>
+                        <li>Earplugs</li>
+                        <li>Empty hydration pack</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Comfort</h3>
+                    <ul>
+                        <li>Broken-in shoes</li>
+                        <li>Sunscreen</li>
+                        <li>Light jacket or pashmina</li>
+                        <li>Hand fan</li>
+                        <li>Baby wipes</li>
+                    </ul>
+                </div>
+                <div class="card no">
+                    <h3>Leave at home</h3>
+                    <ul>
+                        <li>Brand new shoes</li>
+                        <li>Expensive jewelry</li>
+                        <li>Anything you can't lose</li>
+                        <li>A full backpack</li>
+                        <li>Bad vibes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Hearing protection callout ===== -->
+        <section>
+            <h2>Protect your ears</h2>
+            <div class="callout">
+                <!-- loading="lazy" = MDN attribute #1, explained in index.html -->
+                <img src="images/earplugs.svg" alt="Protect your ears graphic" width="400" height="260" loading="lazy">
+                <div>
+                    <p>
+                        Main stage speakers can hit over 100 decibels, which is loud enough to
+                        cause hearing damage in a short amount of time. Ringing ears after a show
+                        is a warning sign, not a badge of honor.
+                    </p>
+                    <p>
+                        High-fidelity earplugs lower the volume evenly, so the music still sounds
+                        clear, just quieter. As a DJ, my ears are my most important piece of gear,
+                        so I never go to a show without a pair.
+                    </p>
+                    <!-- Inline CSS example (the assignment allows inline styles) -->
+                    <p style="color: #2de2e6; font-weight: bold;">
+                        Rule of thumb: if you have to shout to someone right next to you, put your earplugs in.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FAQ ===== -->
+        <section>
+            <h2>First-timer FAQ</h2>
+
+            <!--
+                MDN ELEMENT #3: <details> (with its <summary> child)
+                What it is:  A built-in "disclosure widget" that hides content until the user
+                             clicks it. The <summary> is the part that is always visible and
+                             acts as the clickable label. No JavaScript is needed.
+                Where:       Each FAQ question in this section (5 total).
+                How I use it: Each question is a <summary>, and clicking it opens the answer.
+                             This keeps the FAQ short and easy to scan. Styled in styles.css
+                             with the details[open] selector.
+
+                Note: the first question uses the "open" attribute so it starts expanded.
+            -->
+            <details open>
+                <summary>How long should I plan to stay each day?</summary>
+                <p>
+                    Most people show up a few hours after gates open and stay until the end.
+                    Pace yourself. Take breaks in the shade or at a chill-out area, especially if
+                    it's a multi-day festival.
+                </p>
+            </details>
+
+            <details>
+                <summary>How much water should I drink?</summary>
+                <p>
+                    Drink water steadily throughout the day instead of chugging a lot at once.
+                    Most festivals have free refill stations. Also grab an electrolyte drink
+                    every now and then, since you're sweating out more than water.
+                </p>
+            </details>
+
+            <details>
+                <summary>What if I lose my friends?</summary>
+                <p>
+                    Cell service is usually terrible at festivals, so pick a meetup spot (a
+                    landmark, not "by the main stage") and a time to check in before you split up.
+                </p>
+            </details>
+
+            <details>
+                <summary>What shoes should I wear?</summary>
+                <p>
+                    Comfortable shoes you've already broken in. You can easily walk 10+ miles in
+                    a day. Closed-toe is better since the ground gets dusty and crowded.
+                </p>
+            </details>
+
+            <details>
+                <summary>Where can I get help if something goes wrong?</summary>
+                <p>
+                    Every major festival has medical tents and staff. Find them on the map when
+                    you arrive. Don't be afraid to go if you or a friend feels off. They are
+                    there to help, not to get anyone in trouble.
+                </p>
+            </details>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bass &amp; Lights &middot; Built by Brian Figueroa for a CSUN web design project</p>
+    </footer>
+
+</body>
+</html>

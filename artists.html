@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The electronic music genres and artists I love most.">
+    <title>Bass &amp; Lights | Artists &amp; Genres</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Internal CSS just for this page (the assignment allows all 3 types of CSS) -->
+    <style>
+        .genre:nth-child(2) { border-left-color: #ff3ea5; }
+        .genre:nth-child(3) { border-left-color: #2de2e6; }
+        .genre:nth-child(4) { border-left-color: #ffd23f; }
+    </style>
+</head>
+<body>
+
+    <!-- ===== Header / navigation ===== -->
+    <header>
+        <div class="header-inner">
+            <a class="logo" href="index.html">BASS <span>&amp;</span> LIGHTS</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="festivals.html">Festivals</a></li>
+                    <li><a class="active" href="artists.html">Artists &amp; Genres</a></li>
+                    <li><a href="guide.html">Survival Guide</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="page-title">
+            <h1>Artists &amp; Genres</h1>
+            <p>The sounds I play in my DJ sets and the ones I travel to see live.</p>
+        </div>
+
+        <!-- ===== Genres with a "hype meter" ===== -->
+        <section>
+            <h2>My hype meter</h2>
+            <p>How hyped I get when each genre comes on, on a scale of 0 to 10.</p>
+
+            <!--
+                MDN ELEMENT #2: <meter>
+                What it is:  An element that shows a value inside a known range, like a gauge
+                             (for example, a battery level or a rating). It is different from
+                             <progress>, which shows how far along a task is.
+                Where:       Inside each .genre box below (4 total on this page).
+                How I use it: Each meter shows my "hype level" for a genre from 0 to 10.
+                             I use min, max, low, high, and optimum so the browser changes
+                             the bar's color depending on the value. It is styled in styles.css.
+            -->
+            <div class="genre-list">
+                <article class="genre">
+                    <h3>House / Tech House</h3>
+                    <p class="bpm">Around 120 to 128 BPM</p>
+                    <p>
+                        Groovy, bouncy, and built for dancing all night. This is what I play most
+                        when I DJ. Artists: John Summit, Chris Lake, Fisher, Dom Dolla.
+                    </p>
+                    <div class="hype">
+                        <meter min="0" max="10" low="4" high="7" optimum="10" value="10">10 out of 10</meter>
+                        <span>10 / 10</span>
+                    </div>
+                </article>
+
+                <article class="genre">
+                    <h3>Dubstep / Bass</h3>
+                    <p class="bpm">Around 140 to 150 BPM</p>
+                    <p>
+                        Heavy drops and wobbles that shake the whole field. Perfect for headbanging.
+                        Artists: Subtronics, Excision, Zeds Dead, Svdden Death.
+                    </p>
+                    <div class="hype">
+                        <meter min="0" max="10" low="4" high="7" optimum="10" value="9">9 out of 10</meter>
+                        <span>9 / 10</span>
+                    </div>
+                </article>
+
+                <article class="genre">
+                    <h3>Techno</h3>
+                    <p class="bpm">Around 125 to 140 BPM</p>
+                    <p>
+                        Dark, driving, and hypnotic. Better in a warehouse at 2 AM than in the
+                        daytime. Artists: Charlotte de Witte, Amelie Lens, Adam Beyer.
+                    </p>
+                    <div class="hype">
+                        <meter min="0" max="10" low="4" high="7" optimum="10" value="7">7 out of 10</meter>
+                        <span>7 / 10</span>
+                    </div>
+                </article>
+
+                <article class="genre">
+                    <h3>Drum &amp; Bass</h3>
+                    <p class="bpm">Around 170 to 175 BPM</p>
+                    <p>
+                        Fast breakbeats and rolling basslines. The energy never lets up.
+                        Artists: Sub Focus, Chase &amp; Status, Netsky.
+                    </p>
+                    <div class="hype">
+                        <meter min="0" max="10" low="4" high="7" optimum="10" value="6">6 out of 10</meter>
+                        <span>6 / 10</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== Top 5 countdown ===== -->
+        <section>
+            <h2>Top 5 artists to see live</h2>
+
+            <!--
+                MDN ATTRIBUTE #3: reversed
+                What it is:  A boolean attribute for <ol> that makes the list count down
+                             instead of up (5, 4, 3, 2, 1).
+                Where:       On the ordered list right below this comment.
+                How I use it: I wanted a "countdown" style ranking where #1 is revealed last,
+                             so the list numbers go from 5 down to 1 without me typing them.
+            -->
+            <ol class="countdown" reversed>
+                <li><strong>Dom Dolla</strong> &ndash; every set feels like a party with friends.</li>
+                <li><strong>Excision</strong> &ndash; the loudest, heaviest production I've ever felt.</li>
+                <li><strong>Fisher</strong> &ndash; pure fun, the whole crowd sings along to "Losing It."</li>
+                <li><strong>Chris Lake</strong> &ndash; perfect tech house, always smooth transitions.</li>
+                <li><strong>John Summit</strong> &ndash; the set that made me want to start DJing.</li>
+            </ol>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bass &amp; Lights &middot; Built by Brian Figueroa for a CSUN web design project</p>
+    </footer>
+
+</body>
+</html>

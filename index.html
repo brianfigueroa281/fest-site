@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bass & Lights - my music festival and concert experiences.">
+    <title>Bass &amp; Lights | Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ===== Header / navigation (same on all 4 pages) ===== -->
+    <header>
+        <div class="header-inner">
+            <a class="logo" href="index.html">BASS <span>&amp;</span> LIGHTS</a>
+            <nav>
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="festivals.html">Festivals</a></li>
+                    <li><a href="artists.html">Artists &amp; Genres</a></li>
+                    <li><a href="guide.html">Survival Guide</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ===== Hero section ===== -->
+        <section class="hero">
+            <div>
+                <h1>Life is better <span class="glow">under the lights.</span></h1>
+                <p>
+                    Welcome to Bass &amp; Lights, my corner of the internet for everything
+                    festival and concert related. I'm a DJ and a raver based in Southern
+                    California, and this site is where I keep track of the events I've been to,
+                    the artists and genres I can't stop listening to, and everything I've learned
+                    about surviving a three-day weekend in the desert.
+                </p>
+                <a class="button" href="festivals.html">See my festivals</a>
+            </div>
+
+            <!--
+                MDN ATTRIBUTE #1: loading="lazy"
+                What it is:  An attribute for <img> (and <iframe>) that tells the browser
+                             it can wait to download the image until the user scrolls near it.
+                Where:       On this hero image, on every festival banner in festivals.html,
+                             and on the earplug image in guide.html.
+                How I use it: It keeps the pages loading fast because images that are
+                             further down the page don't download until they're needed.
+            -->
+            <img src="images/hero-stage.svg" alt="Illustration of a festival main stage with lasers and a crowd" width="600" height="450" loading="lazy">
+        </section>
+
+        <!-- ===== Quick links to the other pages ===== -->
+        <section>
+            <h2>What's on the site</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>The Festivals</h3>
+                    <p>
+                        A breakdown of the SoCal and Vegas festivals I care about most:
+                        where they are, when they happen, and what makes each one different.
+                    </p>
+                    <a href="festivals.html">Go to Festivals &rarr;</a>
+                </article>
+                <article class="card">
+                    <h3>Artists &amp; Genres</h3>
+                    <p>
+                        From house to dubstep to drum &amp; bass: the sounds that move me,
+                        how hyped I get for each one, and my all-time top sets countdown.
+                    </p>
+                    <a href="artists.html">Go to Artists &rarr;</a>
+                </article>
+                <article class="card">
+                    <h3>Survival Guide</h3>
+                    <p>
+                        What to pack, how to protect your hearing, and answers to the questions
+                        every first-timer asks before their first festival.
+                    </p>
+                    <a href="guide.html">Go to the Guide &rarr;</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== About section ===== -->
+        <section>
+            <h2>Why festivals?</h2>
+            <p>
+                There's nothing like the moment the lights drop and 50,000 people react to the
+                same beat at the same time. Festivals are where I found the music that got me
+                into DJing, where I've met some of my best friends, and where I learned how
+                much the little details (good shoes, water, ear protection) make or break your
+                night.
+            </p>
+            <p>
+                <!--
+                    MDN ELEMENT #1: <time>
+                    What it is:  A semantic element that marks up a date or time so browsers,
+                                 search engines, and screen readers can understand it.
+                    Where:       Here in the "Why festivals?" section, and on each festival
+                                 on festivals.html.
+                    How I use it: To show when the site was last updated. It works together
+                                 with the datetime attribute (MDN attribute #2, explained below).
+                -->
+                <!--
+                    MDN ATTRIBUTE #2: datetime
+                    What it is:  An attribute on <time> that holds a machine-readable
+                                 version of the date (YYYY-MM-DD format).
+                    Where:       On every <time> element on this page and festivals.html.
+                    How I use it: The visible text is friendly ("September 28, 2026"), and
+                                 the datetime value gives computers the exact date.
+                -->
+                This site was last updated on <time datetime="2026-09-28">September 28, 2026</time>.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- ===== Footer (same on all 4 pages) ===== -->
+    <footer>
+        <p>&copy; 2026 Bass &amp; Lights &middot; Built by Brian Figueroa for a CSUN web design project</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The festivals I care about most in Southern California and Las Vegas.">
+    <title>Bass &amp; Lights | Festivals</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ===== Header / navigation ===== -->
+    <header>
+        <div class="header-inner">
+            <a class="logo" href="index.html">BASS <span>&amp;</span> LIGHTS</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="festivals.html">Festivals</a></li>
+                    <li><a href="artists.html">Artists &amp; Genres</a></li>
+                    <li><a href="guide.html">Survival Guide</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="page-title">
+            <h1>The Festivals</h1>
+            <p>The four events that live rent-free in my head all year.</p>
+        </div>
+
+        <!--
+            Each festival is an <article> with a banner image and an info box.
+            The banner images use loading="lazy" (MDN attribute #1, explained in index.html)
+            and the months use <time> + datetime (MDN element #1 / attribute #2).
+            datetime="YYYY-MM" is valid and means "this month," since dates change every year.
+        -->
+
+        <!-- ===== EDC ===== -->
+        <article class="festival">
+            <img src="images/edc.svg" alt="EDC Las Vegas banner with a sunset over the crowd" width="400" height="260" loading="lazy">
+            <div class="festival-info">
+                <h2>EDC Las Vegas</h2>
+                <p class="festival-meta">
+                    <strong>Where:</strong> Las Vegas Motor Speedway, NV &middot;
+                    <strong>When:</strong> <time datetime="2026-05">May</time> &middot;
+                    <strong>Vibe:</strong> Massive
+                </p>
+                <p>
+                    Electric Daisy Carnival is the big one. Three nights, sunset to sunrise, with
+                    huge stages, art cars, and carnival rides spread across the speedway. The
+                    main stage production is unreal, but some of my favorite moments have been at
+                    the smaller stages at 4 AM.
+                </p>
+                <p><strong>Tip:</strong> Leave early for the shuttle line and plan a meetup spot with your group.</p>
+            </div>
+        </article>
+
+        <!-- ===== CRSSD ===== -->
+        <article class="festival">
+            <img src="images/crssd.svg" alt="CRSSD banner with an ocean-colored sky" width="400" height="260" loading="lazy">
+            <div class="festival-info">
+                <h2>CRSSD Festival</h2>
+                <p class="festival-meta">
+                    <strong>Where:</strong> Waterfront Park, San Diego, CA &middot;
+                    <strong>When:</strong> <time datetime="2026-03">March</time> &amp; <time datetime="2026-09">September</time> &middot;
+                    <strong>Vibe:</strong> Chill
+                </p>
+                <p>
+                    CRSSD is the opposite of EDC in the best way. It's a daytime festival on the
+                    San Diego bay with a lineup that leans into house and techno. The crowd is
+                    relaxed, the sound is clean, and watching the sun set over the water during a
+                    deep house set is hard to beat.
+                </p>
+                <p><strong>Tip:</strong> Bring a light jacket. It gets cold fast once the sun goes down by the water.</p>
+            </div>
+        </article>
+
+        <!-- ===== HARD Summer ===== -->
+        <article class="festival">
+            <img src="images/hard.svg" alt="HARD Summer banner with a bright orange sky" width="400" height="260" loading="lazy">
+            <div class="festival-info">
+                <h2>HARD Summer</h2>
+                <p class="festival-meta">
+                    <strong>Where:</strong> Los Angeles area, CA &middot;
+                    <strong>When:</strong> <time datetime="2026-08">August</time> &middot;
+                    <strong>Vibe:</strong> High energy
+                </p>
+                <p>
+                    HARD Summer mixes dance music with hip-hop, so the lineup is always all over
+                    the place in a good way. It's close to home, which means no flights and no
+                    hotel, and the energy in the crowd is always turned up.
+                </p>
+                <p><strong>Tip:</strong> It's August in LA. Hydrate before you even get there.</p>
+            </div>
+        </article>
+
+        <!-- ===== Nocturnal Wonderland ===== -->
+        <article class="festival">
+            <img src="images/nocturnal.svg" alt="Nocturnal Wonderland banner with a night sky and moon" width="400" height="260" loading="lazy">
+            <div class="festival-info">
+                <h2>Nocturnal Wonderland</h2>
+                <p class="festival-meta">
+                    <strong>Where:</strong> Glen Helen, San Bernardino, CA &middot;
+                    <strong>When:</strong> <time datetime="2026-09">September</time> &middot;
+                    <strong>Vibe:</strong> Classic SoCal rave
+                </p>
+                <p>
+                    One of the longest-running festivals in Southern California. It has an
+                    Alice in Wonderland theme, camping, and a crowd that has been going for years.
+                    It feels more like a community than a show.
+                </p>
+                <p><strong>Tip:</strong> If you camp, bring a real sleeping pad. The ground is hard.</p>
+            </div>
+        </article>
+
+        <!-- ===== Comparison table ===== -->
+        <section>
+            <h2>Side by side</h2>
+            <table>
+                <caption>Quick comparison of the four festivals</caption>
+                <thead>
+                    <tr>
+                        <th>Festival</th>
+                        <th>Location</th>
+                        <th>Day or Night</th>
+                        <th>Main Sounds</th>
+                        <th>Camping</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>EDC Las Vegas</td>
+                        <td>Las Vegas, NV</td>
+                        <td>Night</td>
+                        <td>Everything</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>CRSSD</td>
+                        <td>San Diego, CA</td>
+                        <td>Day</td>
+                        <td>House, Techno</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>HARD Summer</td>
+                        <td>Los Angeles area</td>
+                        <td>Day into night</td>
+                        <td>House, Bass, Hip-Hop</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Nocturnal Wonderland</td>
+                        <td>San Bernardino, CA</td>
+                        <td>Night</td>
+                        <td>Everything</td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bass &amp; Lights &middot; Built by Brian Figueroa for a CSUN web design project</p>
+    </footer>
+
+</body>
+</html>
